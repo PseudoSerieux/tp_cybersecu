@@ -10,7 +10,7 @@ $userController = new UserController($oktaApi);
 // view data
 $data = null;
 
-// build login URL and redirect the user
+// login URL et redirection 
 if (isset($_REQUEST['login']) && (! isset($_SESSION['username']))) {
     $_SESSION['state'] = bin2hex(random_bytes(5));
     $authorizeUrl = $oktaApi->buildAuthorizeUrl($_SESSION['state']);

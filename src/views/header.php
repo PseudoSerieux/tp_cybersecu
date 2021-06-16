@@ -18,6 +18,8 @@
                 ?>
                         <p>
                             Logged in as <?php echo $_SESSION['username'] ?>
+                            <br />
+                            Token is <?php echo $_GET['code'] ?> (\o/)
                         </p>
                         <p><a href="/?logout">Log Out</a></p>
                 <?php 
